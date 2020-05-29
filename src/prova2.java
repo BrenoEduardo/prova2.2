@@ -29,6 +29,7 @@ public class prova2 {
 			}
 			ct = ht * vh;
 			custototal = custototal + ct;
+			
 			System.out.printf("Digitar outro (S/N)? ");
 			sn = sc.next().charAt(0);
 			
@@ -56,6 +57,9 @@ public class prova2 {
 			else if(opçao==2) {
 				System.out.printf("Custo total = R$ %.2f", ct);
 				System.out.println();
+			}
+			else if (opçao==3) {
+				System.out.printf("Pessoa que ganhou mais: ");
 			}
 		} while(opçao<4);
 		
