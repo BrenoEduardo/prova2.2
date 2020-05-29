@@ -8,7 +8,7 @@ public class prova2 {
 		Scanner sc = new Scanner(System.in);
 		
 		String nome;
-		int ht;
+		int ht, opçao;
 		float vh;
 		char sn;
 		do {
@@ -31,12 +31,28 @@ public class prova2 {
 			
 			
 		} while(sn == 'S');
+		// menu
 		
+		do {
+			System.out.println("MENU");
+			System.out.println("1- Total de horas trabalhadas");
+			System.out.println("2- Custo Total");
+			System.out.println("3- Nome da pessoa que ganhou mais");
+			System.out.println("4- Sair");
+			System.out.print("Digite uma opção: ");
+			opçao = sc.nextInt();
+			
+		} while(opçao>4);
 		
-		
-		
+		System.out.println();
+			if(opçao==4) {
+				System.out.printf("FIM DO PROGRAMA");
+			}
+		// fim do menu
 sc.close();
-}
+
+		
+	}
 }
 
 
